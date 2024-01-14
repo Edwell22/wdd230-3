@@ -1,12 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hello</title>
-</head>
-<body>
-    <P>hello world </P>   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edwell Kakunguwo's Assignment Portal</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@300&family=Quicksand&family=Raleway&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="description" content="Course Assignment Portal For Edwell Kakunguwo WDD 230-3: Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i1.wp.com/www.thezimbabwemail.com/wp-content/uploads/2020/09/Harare-2.png?fit=1024%2C684&ssl=1 ">
+    <meta property="og:url" content="https://edwell22.github.io/wdd230-3/">
+    <meta name="author" content="Edwell Kakunguwo">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head> 
+<body >
+    <div id="main">
+    <header>
+        <img src="images/edwekings.webp" alt="MY profile photo">
+        <h1>Edwell Kakunguwo</h1>
+     
+    </header>
+
+    <div id="mode">🌑</div>
+    
+
+    <nav>
+        <button id="menu"></button>
+
+        <ul class="navigation">
+            
+           <li><a href="index.html">Home</a></li> 
+           <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li> 
+            <li><a href=#>Chamber</a></li>
+            <li><a href=#>Form</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <picture>
+          <source srcset="images/roma_small.webp" media="(max-width: 500px)">
+          <source srcset="images/hero-medium.webp" media="(max-width: 750px)">
+          <img src="images/roma_large.webp" width="900" alt="Portal Hero Image">
+        </picture>
+        <div class="herolabel">
+          <p>Rome Temple</p>
+        </div>
+      </div>
+    
+    <h2>WDD 230: Web Frontend Development</h2>
+        <hr>
+        <main id="bodyp">
+        
+
+            <section class="card" id="bdys">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01:<a href="week01/chamber-site-plan.html">Site Plan</a> |<a href="week01/holygrail.html">Holy Layout</a> | 
+                        <a href="week01/jspen.html">JS Pen</a> | <a href="week01/media-query.html">Media Query</a></li>
+                    <li>02: 
+                    <li>03: 
+                    <li>04: 
+                    <li>05:
+                    <li>06: 
+                    <li>07: 
+                
+                </ul>
+            </section>
+            <section class="card2" id="secbdy">
+               <h3>Information</h3>
+               <p>Harare, Zimbabwe</p>
+               <p>The current temperature in Zimbabwe, Harare is: <span id="current-temp"></span></p>
+            <div id="weather-container">
+            
+                
+                <figure>
+                    <img width="150px"  height="50px" id="weather-icon"  style="background: aquamarine !important;" alt="">
+                    
+                </figure>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+            </div>
+
+            
+            </section>
+           
+        </main>
+        <div class="map-wrapper">
+            <iframe
+              class="map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3797.223071530734!2d31.03617307372799!3d-17.875019940243916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1931a37a414f7783%3A0xa1879ecb9ca6ca2!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2szw!4v1696250947026!5m2!1sen!2szw"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+        <footer id="king">
+            <p>&copy; <span id="year"></span> <br> Edwell Kakunguwo <br>Zimbabwe</p>
+            <p>Last Modification: <span id="currentdate"></span></p>
+        </footer>
+    </div>
+    <script src="scripts/main.js"></script>
     
 </body>
-</html>
+</html>                                                                                                                                                                                                                                  
