@@ -162,7 +162,7 @@ apiFetch();
 
 async function getThreDayForecast() {
   const url =
-    "https://api.openweathermap.org/data/2.5/forecast?lat=-12.09&lon=-77.06&appid=d95dddf55be4cf8701c5a27d5d84f3cc&units=imperial";
+    "https://api.openweathermap.org/data/2.5/forecast?lat=12.09&lon=77.06&appid=d95dddf55be4cf8701c5a27d5d84f3cc&units=imperial";
   const response = await fetch(url);
   const forecastData = await response.json();
   displayForecast(forecastData);
