@@ -6,6 +6,7 @@
 header {
     text-align: center;
     padding: 3rem;
+    background-color:rgb(12, 120, 163);
 }
 
 main {
@@ -31,4 +32,21 @@ picture img {
 
 footer {
     text-align: center;
+}
+footer p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+footer {
+    background-color:rgb(12, 120, 163);
+    color: #dadfe2;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+footer p:nth-last-of-type(1) {
+    color: lime;
 }
