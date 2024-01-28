@@ -61,35 +61,22 @@
 
 
     /*discover Page*/
-
-
-    #container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #aside-discover{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-
-
-    #gallery img {
-        width: 100%;
-        margin: 10px;
-
-
-    }
-
-    #galley img:hover {
-        box-shadow: -2px -2px 5px 2px rgba(0, 0, 0, 0.5);
-    }
-    #gallery {
-        grid-column: 2/3;
-        overflow-y: auto;
-        overflow-x: hidden;
-        height: 800px;
-    }
-
+    
+  
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+    
+      .list .company-info {
+        flex-direction: row;
+      }
+    
+      .list .company-info:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: 0 0 10px var(--nav-link-color);
+      }
+  
 
 }

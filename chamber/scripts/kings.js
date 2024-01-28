@@ -14,6 +14,44 @@ button.addEventListener("click", () => {
   navList.classList.toggle("open");
 });
 
+// Store last visit date of user in local storage
+
+//Get Element by ID
+var lastVisitElement = document.getElementById("date");
+var daysBetween = document.getElementById("days");
+
+// Get current date
+var today = new Date();
+
+// Get last visit date from local storage
+var lastVisit = localStorage.getItem("lastVisit") || today;
+
+// If last visit date is not set, set it to today
+if (lastVisit == null) {
+    localStorage.setItem("lastVisit", today);
+    }
+// If last visit date is set, show it
+else {
+    DisplayOnPage(lastVisitElement, lastVisit,daysBetween);
+    }
+
+// Set last visit date to today
+localStorage.setItem("lastVisit", today);
+
+function calculateDateBetween(today, lastVisit) {
+    var lastVisitDate = new Date(lastVisit);
+    var diff = today.getTime() - lastVisitDate.getTime();
+    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    return days;
+}
+
+function DisplayOnPage(lastVisitElement,lastVisit, daysBetween) {
+    var lastVisitDate = new Date(lastVisit);
+    var lastVisitDateFormatted = lastVisitDate.toDateString();
+    lastVisitElement.innerHTML = lastVisitDateFormatted;
+    daysBetween.innerHTML = calculateDateBetween(today, lastVisit);
+
+}
 /* LAST VISITS */
 const msToDays = 84600000; // using to convert to ms to days
 
@@ -137,6 +175,7 @@ if (changeViewVar) {
 
 /*Display temperature */
 
+
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
@@ -162,7 +201,7 @@ apiFetch();
 
 async function getThreDayForecast() {
   const url =
-    "https://api.openweathermap.org/data/2.5/forecast?lat=12.09&lon=77.06&appid=d95dddf55be4cf8701c5a27d5d84f3cc&units=imperial";
+    "https://api.openweathermap.org/data/2.5/forecast?lat=49.74&lon=6.63&appid=76cd0cc1ffbcb7fcbc8193cf2c4758e5&units=imperial";
   const response = await fetch(url);
   const forecastData = await response.json();
   displayForecast(forecastData);
@@ -183,6 +222,10 @@ function displayForecast(forecastData) {
     }
   });
 }
+
+
+
+
 
 // dark mode and light mode
 const modeButton = document.querySelector("#mode");
@@ -244,7 +287,7 @@ function enableLightMode() {
 
 /*ADVERTISEMENT*/
 
-const memberJson = "https://edwell22.github.io/wdd230/Borrowdale-chamb/data/members.json";
+const memberJson = "https://edwell22.github.io/wdd230-3/chamber/data/members.json";
 async function getSilverMembers(url) {
   const data = await fetch(url);
   const jsonData = await data.json();
