@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>HTML5 Start Site by Edwell Kakunguwo</title>
+    <meta name="author" content="Edwell Kakunguwo">
+    <meta name="description" content="Fill Me In">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@300&family=Quicksand&family=Raleway&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <meta name="description" content="Course Assignment Portal For Edwell Kakunguwo WDD 230: Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i1.wp.com/www.thezimbabwemail.com/wp-content/uploads/2020/09/Harare-2.png?fit=1024%2C684&ssl=1 ">
+    <meta property="og:url" content="https://edwell22.github.io/wdd230-3/week04/index.html">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Course Proposal</h1>
+        <h2>Designing Web Forms</h2>
+    </header>
+
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li class="active"><a href="#">Propose</a></li>
+            <li><a href="#">Winners</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Aplicant Information</legend>
+               <label class="top">First Name*<input type="text" name="fname" required></label>
+               <label class="top">Last Name*<input type="text" name="lname" required></label>
+               <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+               <label class="top">Email<input type="email" name="email" placeholder=
+                "someone@gmail.com" required></label>
+                <label class="top">Website<input type="url" name="url" placeholder="https://"></label>
+            </fieldset>
+           <fieldset>
+            <legend>Course Information</legend>
+            <div>Audience</div>
+            <Label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</Label>
+            <Label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</Label>
+            <Label class="sbs"><input type="radio" name="audience" value="advanced">Advanced</Label>
+
+            <div>Software Needed</div>
+            <Label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</Label>
+            <Label class="sbs"><input type="checkbox" name="code" value="yes">Coding</Label>
+            <Label class="sbs"><input type="checkbox" name="process" value="yes">Processor</Label>
+            <Label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</Label>
+           </fieldset>
+
+           <fieldset>
+            <legend>Funding</legend>
+            <label class="top">Anticipated Completion Date <input type="date" name="completedDate"></label>
+            <label class="top"> Course Subject
+                <select name="Subject">
+                    <option value="">Please Select</option>
+                    <option value="Software">Software Development</option>
+                    <option value="creative">Creative Professional</option>
+                    <option value="info">Information Technology</option>
+                    <option value="data">Data Professional</option>
+                    <option value="construction">Construction</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="business">Business Professional</option>
+                    <option value="cyber">Cyber Security</option>
+
+                </select>
+            </label>
+
+            <label>How Many Authors <input type="number" name="author"></label>
+           </fieldset>
+           <input type="submit"  value="Propose My Course" class="submitBtn">
+
+
+        </form>
+
+    </main>
+
+
+    <footer>
+        &copy; &bull; Edwell-Kakunguwo &bull; +263718666296
+    </footer>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
