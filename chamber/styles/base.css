@@ -324,14 +324,15 @@ i {
   }
 
  .hero h1 {
-    position: absolute;
+    position: relative;;
    top:auto;
     left: 0%;
     color: hsl(206, 94%, 14%);
     background-color: rgba(155, 162, 228, 0.7);
     font-size: 1.8rem;
-    width: 100%;
+    width: 40%;
     margin-top: -150px;
+
 }
   .hero img {
     display: block;
