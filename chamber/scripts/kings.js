@@ -93,66 +93,6 @@ function setTimestamp() {
 }
 setTimestamp();
 
-// Members Dinamically
-
-const cardContainer = document.querySelector("#card-container");
-const membersUrl = "https://edwell22.github.io/wdd230/Borrowdale-chamb/data/members.json";
-
-async function getMembers() {
-  try {
-    const response = await fetch(membersUrl);
-    if (response.ok) {
-      const data = await response.json();
-      console.log(data);
-      displayMembers(data);
-    } else {
-      throw Error(await response.text());
-    }
-  } catch (error) {
-    console.log(error);
-  }
-}
-
-function displayMembers(membersData) {
-  membersData.companies.forEach((company) => {
-    const article = document.createElement("article");
-    article.classList.add("container");
-
-    const h2 = document.createElement("h2");
-    h2.textContent = company.name;
-
-    const address = document.createElement("p");
-    address.textContent = company.address;
-
-    const phoneNumber = document.createElement("p");
-    phoneNumber.textContent = company.phoneNumber;
-
-    const website = document.createElement("a");
-    website.setAttribute("href", company.websiteURL);
-    website.textContent = company.websiteURL;
-    website.classList.add("memberLink");
-
-    const memberShipLevel = document.createElement("p");
-    memberShipLevel.textContent = `MemberShip Level: ${company.membershipLevel}`;
-
-    const img = document.createElement("img");
-    img.setAttribute("src", company.image);
-
-    article.appendChild(img);
-    article.appendChild(h2);
-    article.appendChild(address);
-    article.appendChild(phoneNumber);
-    article.appendChild(website);
-    article.appendChild(memberShipLevel);
-
-    cardContainer.appendChild(article);
-  });
-}
-
-if (cardContainer) {
-  getMembers();
-}
-
 /*SELECT THE VIEW*/
 
 const changeView = () => {

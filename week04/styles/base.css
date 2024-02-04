@@ -15,7 +15,11 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color:rgb(12, 120, 163);
+    color: #dadfe2;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
@@ -146,7 +150,17 @@ footer {
     text-align: center;
 }
 
+footer {
+    background-color:rgb(12, 120, 163);
+    color: #dadfe2;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 
+footer p:nth-last-of-type(1) {
+    color: lime;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

@@ -18,7 +18,7 @@
         align-items: center;
         justify-content: space-around;
         font-size: 1.2rem;
-        background-color:  #4a665a;
+        background-color:  rgb(78, 77, 77);
     }
     main {
         grid-template-columns: 1fr 1fr 50% 1fr 1fr;

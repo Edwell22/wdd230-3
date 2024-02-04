@@ -48,7 +48,7 @@ header #menu::before {
 nav {
    
     text-align: center;    
-    background-color: #4a665a;
+    background-color: silver;
     display: none;
 }
 nav li { 
@@ -62,7 +62,7 @@ nav li a {
     
 }
 nav li:hover {
-    background-color:#4a665a;
+    background-color:silver;
     color: #FFF8EB;
     text-decoration: underline;
 }
@@ -84,6 +84,9 @@ section,aside {
     color: hsl(206, 94%, 14%);
     font-family: 'Noticia Text', serif;
     padding: 1rem;
+    border: 5px ridge hsl(234, 88%, 13%);
+    border-radius: 25px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
 }
 
 section .section-header, aside .section-header {
@@ -110,7 +113,9 @@ section .section-header h2 {
 }
 
 #hero-img-container {
-    border: 1px solid black;
+    border: 5px ridge hsl(234, 88%, 13%);
+    border-radius: 10px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
     grid-column: 1/5;
     position: relative;
     text-align: center;
@@ -443,9 +448,7 @@ i {
     text-align: left;
     padding: 3%;
 }
-
-
-/*FORM*/
+/*Join Page*/
 
 
 #join-main {
@@ -459,10 +462,11 @@ form {
 }
 form fieldset {
     margin: 2rem 0;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 60px;
-    background-color: rgba(0,0,0,0.1);
+    border: 5px ridge hsl(234, 88%, 13%);
+    border-radius: 25px;
+    box-shadow: 1px 3px 6px 1px rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 2%;
+    background-color: rgba(155, 162, 228, 0.7);
 }
 
 form legend {
@@ -503,7 +507,8 @@ form label.sbs {
 
 form input.joinBtn {
     border: none;
-    background-color:rgb(2, 18, 43);
+    background-color: #062f87;
+    
     color: white;
     border-radius: 10px;
     padding: .75rem 1.5rem;
@@ -518,7 +523,7 @@ form input.joinBtn {
 }
 
 form label.top input:required {
-    border-left: rgb(0, 153, 255) solid 6px;
+    border-left: #3700ff solid 6px;
 }
 
 form label.top input:required:valid {
@@ -527,6 +532,26 @@ form label.top input:required:valid {
 
 textarea {
     display: block;   
+}
+
+
+/*Thank you page*/
+
+#main-thank-you {
+    background-color: #fff;
+    display: block;
+    
+    font-family: 'Graduate', serif;
+}
+
+#main-thank-you h1{
+    
+    padding: 0.5rem 0.2rem;
+}
+
+#main-thank-you p{
+    color:rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 0.2rem;
 }
 
 
