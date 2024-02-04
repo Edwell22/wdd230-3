@@ -541,13 +541,13 @@ textarea {
     background-color: #fff;
     color: hsl(206, 94%, 14%);
     display: block;
-    
     font-family: 'Graduate', serif;
 }
 
 #main-thank-you h2{
     padding: 0.5rem 0.2rem;
     font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 #main-thank-you p{
@@ -555,6 +555,7 @@ textarea {
     padding: 0.5rem 0.2rem;
     text-align: center;
     font: 1.5em sans-serif;
+    margin-bottom: 120px;
 }
 
 
