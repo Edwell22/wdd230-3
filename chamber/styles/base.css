@@ -539,19 +539,22 @@ textarea {
 
 #main-thank-you {
     background-color: #fff;
+    color: hsl(206, 94%, 14%);
     display: block;
     
     font-family: 'Graduate', serif;
 }
 
-#main-thank-you h1{
-    
+#main-thank-you h2{
     padding: 0.5rem 0.2rem;
+    font-size: 1.5em;
 }
 
 #main-thank-you p{
-    color:rgba(0, 0, 0, 0.5);
+    color: hsl(206, 94%, 14%);
     padding: 0.5rem 0.2rem;
+    text-align: center;
+    font: 1.5em sans-serif;
 }
 
 
