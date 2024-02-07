@@ -32,7 +32,7 @@ if (lastVisit == null) {
     }
 // If last visit date is set, show it
 else {
-    DisplayOnPage(lastVisitElement, lastVisit,daysBetween);
+    // DisplayOnPage(lastVisitElement, lastVisit,daysBetween);
     }
 
 // Set last visit date to today
@@ -80,7 +80,7 @@ if (localStorage.getItem("lastVisitDate")) {
   localStorage.setItem("lastVisitDate", todaysDate);
 } else {
   // If this is the first visit, display a welcome message
-  document.getElementById("last-visit").textContent =
+  // document.getElementById("last-visit").textContent =
     "Welcome! Let us know if you have any questions.";
 }
 /*Form*/
@@ -127,11 +127,13 @@ const url =
 async function apiFetch() {
   const response = await fetch(url);
   const data = await response.json();
+  
 
   displayResults(data);
 }
 
 function displayResults(data) {
+ 
   currentTemp.textContent = `${data.main.temp} °F`;
   weatherIcon.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
   captionDesc.textContent = data.weather[0].description;
@@ -141,7 +143,7 @@ apiFetch();
 
 async function getThreDayForecast() {
   const url =
-    "https://api.openweathermap.org/data/2.5/forecast?lat=49.74&lon=6.63&appid=76cd0cc1ffbcb7fcbc8193cf2c4758e5&units=imperial";
+    "https://api.openweathermap.org/data/2.5/forecast?lat=-12.09&lon=-77.06&appid=76cd0cc1ffbcb7fcbc8193cf2c4758e5&units=imperial";
   const response = await fetch(url);
   const forecastData = await response.json();
   displayForecast(forecastData);
