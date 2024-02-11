@@ -93,25 +93,7 @@ function setTimestamp() {
 }
 setTimestamp();
 
-/*SELECT THE VIEW*/
 
-const changeView = () => {
-  const selector = document.querySelector("#view");
-  const main = document.querySelector("#card-container");
-  const selectedValue = selector.value;
-  if (selectedValue === "column") {
-    main.classList.remove("grid");
-    main.classList.toggle("column");
-  } else if (selectedValue === "grid") {
-    main.classList.remove("column");
-    main.classList.toggle("grid");
-  }
-};
-
-const changeViewVar = document.querySelector("#view");
-if (changeViewVar) {
-  changeViewVar.addEventListener("change", changeView);
-}
 
 /*Display temperature */
 
