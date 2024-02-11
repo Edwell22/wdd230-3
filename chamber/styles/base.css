@@ -561,7 +561,65 @@ textarea {
 }
 
 
-/*Directory Page/
+/* Directory Page Styles */
+
+/* Main directory container */
+#main-directory {
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+/* Directory heading */
+#directory-heading {
+    display: block;
+    position: relative;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: white; /* Set background color */
+    color: hsl(206, 94%, 14%); /* Set text color */
+}
+
+/* Card container styles for column layout */
+#card-container.column {
+    max-width: 100%; /* Ensure cards don't exceed maximum width */
+    display: flex;
+    flex-direction: column; /* Arrange cards vertically */
+    align-items: center; /* Center-align items horizontally */
+}
+
+/* Card container styles for grid layout */
+#card-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid layout */
+    gap: 10px; /* Set gap between grid items */
+}
+
+/* Company card styles */
+.company {
+    border: 6px ridge hsl(234, 88%, 13%); /* Set border style */
+    background-color: rgba(155, 162, 228, 0.7); /* Set background color with transparency */
+    border-radius: 5px; /* Add border radius */
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    color: hsl(206, 94%, 14%); /* Set text color */
+    text-align: center; /* Center-align text */
+    gap: 20px; /* Set gap between elements */
+}
+
+
+/* Member link styles within main directory container */
+#main-directory .container .memberLink {
+    color: #fff; /* Set link color */
+    font-family: 'Noticia Text', serif; /* Set font family */
+}
+
+/* Label styles */
+label {
+    display: block; /* Make label a block element */
+    width: fit-content; /* Set width to fit content */
+    margin: 1rem auto; /* Add margin */
+}
+
+
 
 
 

@@ -1,13 +1,12 @@
-/* Last Modification Date*/
-
-//Display the year at the bottom of the page
+// Last Modification Date
+// Display the year at the bottom of the page
 const todaysDate = new Date();
 document.getElementById("year").textContent = todaysDate.getFullYear();
 
 // Display the last modified date
 document.getElementById("lastModified").textContent = document.lastModified;
 
-//DropDown Menu Configuration
+// Dropdown Menu Configuration
 const button = document.querySelector("#menu");
 const navList = document.querySelector("nav");
 button.addEventListener("click", () => {
@@ -16,7 +15,7 @@ button.addEventListener("click", () => {
 
 // Store last visit date of user in local storage
 
-//Get Element by ID
+// Get Element by ID
 var lastVisitElement = document.getElementById("date");
 var daysBetween = document.getElementById("days");
 
@@ -28,61 +27,31 @@ var lastVisit = localStorage.getItem("lastVisit") || today;
 
 // If last visit date is not set, set it to today
 if (lastVisit == null) {
-    localStorage.setItem("lastVisit", today);
-    }
-// If last visit date is set, show it
-else {
-    // DisplayOnPage(lastVisitElement, lastVisit,daysBetween);
-    }
+  localStorage.setItem("lastVisit", today);
+} else {
+  // DisplayOnPage(lastVisitElement, lastVisit,daysBetween);
+}
 
 // Set last visit date to today
 localStorage.setItem("lastVisit", today);
 
+// Function to calculate days between two dates
 function calculateDateBetween(today, lastVisit) {
-    var lastVisitDate = new Date(lastVisit);
-    var diff = today.getTime() - lastVisitDate.getTime();
-    var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-    return days;
+  var lastVisitDate = new Date(lastVisit);
+  var diff = today.getTime() - lastVisitDate.getTime();
+  var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  return days;
 }
 
-function DisplayOnPage(lastVisitElement,lastVisit, daysBetween) {
-    var lastVisitDate = new Date(lastVisit);
-    var lastVisitDateFormatted = lastVisitDate.toDateString();
-    lastVisitElement.innerHTML = lastVisitDateFormatted;
-    daysBetween.innerHTML = calculateDateBetween(today, lastVisit);
-
+// Function to display last visit date on the page
+function DisplayOnPage(lastVisitElement, lastVisit, daysBetween) {
+  var lastVisitDate = new Date(lastVisit);
+  var lastVisitDateFormatted = lastVisitDate.toDateString();
+  lastVisitElement.innerHTML = lastVisitDateFormatted;
+  daysBetween.innerHTML = calculateDateBetween(today, lastVisit);
 }
-/* LAST VISITS */
-const msToDays = 84600000; // using to convert to ms to days
 
-if (localStorage.getItem("lastVisitDate")) {
-  const lastVisitDate = new Date(
-    localStorage.getItem("lastVisitDate")
-  ).getTime();
-  const today = Date.now();
-  let daysDifference = (today - lastVisitDate) / msToDays;
-  let message = "";
 
-  if (daysDifference < 1) {
-    message = "Back so soon! Awesome!";
-  } else if (daysDifference >= 1) {
-    if (daysDifference > 1 && daysDifference < 2) {
-      message = `Your last visit was ${Math.floor(daysDifference)} day ago`;
-    } else {
-      message = `Your last visit was ${Math.floor(daysDifference)} days ago`;
-    }
-  }
-
-  // Move this line outside of the if and else if blocks
-  const divLastVisit = document.querySelector("#last-visit");
-  divLastVisit.textContent = message;
-
-  localStorage.setItem("lastVisitDate", todaysDate);
-} else {
-  // If this is the first visit, display a welcome message
-  // document.getElementById("last-visit").textContent =
-    "Welcome! Let us know if you have any questions.";
-}
 /*Form*/
 /*Time Stamp */
 
@@ -93,25 +62,6 @@ function setTimestamp() {
 }
 setTimestamp();
 
-/*SELECT THE VIEW*/
-
-const changeView = () => {
-  const selector = document.querySelector("#view");
-  const main = document.querySelector("#card-container");
-  const selectedValue = selector.value;
-  if (selectedValue === "column") {
-    main.classList.remove("grid");
-    main.classList.toggle("column");
-  } else if (selectedValue === "grid") {
-    main.classList.remove("column");
-    main.classList.toggle("grid");
-  }
-};
-
-const changeViewVar = document.querySelector("#view");
-if (changeViewVar) {
-  changeViewVar.addEventListener("change", changeView);
-}
 
 /*Display temperature */
 
@@ -165,7 +115,35 @@ function displayForecast(forecastData) {
   });
 }
 
+/*DIRECTORY*/
+/* Function to change the view of the card container */
+const changeView = () => {
+  // Select the view selector element
+  const selector = document.querySelector("#view");
+  // Select the main card container element
+  const main = document.querySelector("#card-container");
+  // Get the selected value from the view selector
+  const selectedValue = selector.value;
 
+  // Toggle classes based on the selected value
+  if (selectedValue === "column") {
+    // If column view is selected, remove grid class and add column class
+    main.classList.remove("grid");
+    main.classList.toggle("column");
+  } else if (selectedValue === "grid") {
+    // If grid view is selected, remove column class and add grid class
+    main.classList.remove("column");
+    main.classList.toggle("grid");
+  }
+};
+
+// Select the view selector element
+const changeViewVar = document.querySelector("#view");
+
+// Add event listener to the view selector for change event
+if (changeViewVar) {
+  changeViewVar.addEventListener("change", changeView);
+}
 
 
 
@@ -230,3 +208,30 @@ function enableLightMode() {
 
 
 
+// Function to update last visit information
+function updateLastVisit() {
+  // Get the current date
+  const currentDate = new Date();
+  // Get the last visit date from localStorage
+  const lastVisitDate = localStorage.getItem("lastVisitDate");
+
+  // Check if there's a last visit date stored
+  if (lastVisitDate) {
+      // Parse the last visit date from string to Date object
+      const lastVisit = new Date(lastVisitDate);
+      // Calculate the difference in milliseconds between current date and last visit date
+      const differenceInMs = currentDate - lastVisit;
+      // Calculate the difference in days
+      const daysBetweenVisits = Math.floor(differenceInMs / (1000 * 60 * 60 * 24));
+      // Update the days between visits element
+      document.getElementById("days").textContent = daysBetweenVisits;
+  }
+
+  // Update the last visit date in localStorage
+  localStorage.setItem("lastVisitDate", currentDate);
+  // Update the date element
+  document.getElementById("date").textContent = currentDate.toLocaleString();
+}
+
+// Call the function to update last visit information
+updateLastVisit();

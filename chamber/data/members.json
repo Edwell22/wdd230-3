@@ -14,7 +14,8 @@
             "phoneNumber": "0776272733 ",
             "websiteURL":"https://www.cimas.co.zw/",
             "image": "images/cimas.webp",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Gold",
+            "advertisement":"Discover excellence in healthcare services at Cimas in Zimbabwe, providing comprehensive and reliable medical solutions tailored to meet your needs"
         },
         {
             "name": "Food Lovers",
@@ -22,7 +23,8 @@
             "phoneNumber": "(01) 5123333",
             "websiteURL":"https://www.foodloverszim.com./",
             "image": "images/food.webp",
-            "membershipLevel": "NP" 
+            "membershipLevel": "NP",
+            "advertisement":" Experience a delightful and satisfying shopping experience at Food Lovers Super Market in Zimbabwe, where quality, variety, and exceptional service converge." 
         },
         {
             "name": "Nash Paint",
@@ -30,7 +32,8 @@
             "phoneNumber": "(024) 2779300",
             "websiteURL":"https://www.nashpaint.com/",
             "image": "images/nash.webp",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver",
+            "advertisement": " Immerse yourself in a world of vibrant possibilities at Nash Paint, where you can unleash style and vibrancy, transforming your spaces with their diverse array of colors and stylish finishes, creating unforgettable memories along the way."
         },
         {
             "name": "Chicken Inn",
@@ -38,11 +41,12 @@
             "phoneNumber": "+263 (0)242 799 609",
             "websiteURL":"https://www.simbisabrands.com/",
             "image": "images/chicken.webp",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver",
+            "advertisement": " Satisfy all your cravings at Chicken Inn, where mouthwatering snacks, daily essentials, and a delectable range of chicken-based meals await, promising a delightful culinary experience that never disappointS"
         },
         {
             "name": "enbee",
-            "address": " 64 Leopold Takawira Street , Harare,Zimbabwe",
+            "address": " 64 Leopold Takawira Street , Harare",
             "phoneNumber": " (024) 2752696 ",
             "websiteURL":"https://www.enbee.co.zw/",
             "image": "images/enbee.webp",
@@ -60,7 +64,8 @@
         {
             "name": "Bakers Inn",
             "address": "1 Shepperton Road,Graniteside,Harare",
-            "websiteURL": "https://www.innscorafrica.com/bakers-inn/ ",
+            "phoneNumber": "08080151",
+            "websiteURL": "https://www.com/bakersinnzim.com/ ",
             "image":"images/bakers.webp",
             "membershipLevel":"Gold"
         }
