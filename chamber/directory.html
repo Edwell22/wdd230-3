@@ -17,6 +17,7 @@
     <link rel="icon" href="images/favoc.webp">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <title>Directory Page Borrowdale Chamber Of Commerce</title>
 </head>
 <body>
@@ -37,15 +38,26 @@
             <li><a href="./directory.html">Directory</a></li>
         </ol>
     </nav>
-<main>
-    <h1>Directory of Chamber Members</h1>
-	<div  id="directory-btn-container">
-		<button id="grid">Grid</button>
-		<button id="list">List</button>
-	</div>
-    <div id="contacts" class="contacts-grid"></div>
- 
-</main>
+
+
+
+
+    <main id="main-directory">
+        <h1 id="directory-title"> Lima Chamber Of Commerce Directory Page</h1>
+
+        <label class="top">
+            <select name="subject" id="view">
+                <option value="">Select To View;</option>
+                <option value="grid">GRID</option>
+                <option value="column">COLUMN</option>
+            </select>
+        </label>
+
+
+        <div id="card-container"></div>
+    </main>
+
+
 <footer id="kings" style="display:flex; justify-content: space-between;  height: 150px;">
     <div><img src="images/logom.webp" alt="logo"></div>
     <p>&copy;<span id="year"></span>&bull; Borrowdale Chamber | <strong>Edwell Kakunguwo</strong> | WDD230 Project <br>
@@ -56,5 +68,7 @@
           +263718666296</p>      
 </footer>
 <script src="./scripts/kings.js"></script>
+<script src="./scripts/king.js"></script>
+<script src="./data/members.json"></script>
 </body>
 </html>

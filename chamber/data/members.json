@@ -22,8 +22,7 @@
             "phoneNumber": "(01) 5123333",
             "websiteURL":"https://www.foodloverszim.com./",
             "image": "images/food.webp",
-            "membershipLevel": "NP",
-            "advertisement":"  Discover an extensive selection of fresh produce, pantry staples, gourmet treats, and specialty items,all meticulously sourced to meet the highest standards." 
+            "membershipLevel": "NP" 
         },
         {
             "name": "Nash Paint",
@@ -31,8 +30,7 @@
             "phoneNumber": "(024) 2779300",
             "websiteURL":"https://www.nashpaint.com/",
             "image": "images/nash.webp",
-            "membershipLevel": "Silver",
-            "advertisement": "Step into a res and exciting experiences, Real Plaza is the place where unforgettable memories are mad"
+            "membershipLevel": "Silver"
         },
         {
             "name": "Chicken Inn",
@@ -40,8 +38,7 @@
             "phoneNumber": "+263 (0)242 799 609",
             "websiteURL":"https://www.simbisabrands.com/",
             "image": "images/chicken.webp",
-            "membershipLevel": "Silver",
-            "advertisement": " Satisfy your cravings at Chicken Inn! From mouthwatering snacks to daily essentials, we've got it all. Indulge in our delicious range of chicken-based meals and experience the convenience of a neighborhood restaurant that never fails to delight your taste buds."
+            "membershipLevel": "Silver"
         },
         {
             "name": "enbee",
@@ -59,6 +56,13 @@
             "websiteURL":"https://www.doves.o.zw/",
             "image": "images/doves.webp",
             "membershipLevel": "NP"
+        },
+        {
+            "name": "Bakers Inn",
+            "address": "1 Shepperton Road,Graniteside,Harare",
+            "websiteURL": "https://www.innscorafrica.com/bakers-inn/ ",
+            "image":"images/bakers.webp",
+            "membershipLevel":"Gold"
         }
     ]
 

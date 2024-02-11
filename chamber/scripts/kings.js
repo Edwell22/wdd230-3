@@ -93,7 +93,25 @@ function setTimestamp() {
 }
 setTimestamp();
 
+/*SELECT THE VIEW*/
 
+const changeView = () => {
+  const selector = document.querySelector("#view");
+  const main = document.querySelector("#card-container");
+  const selectedValue = selector.value;
+  if (selectedValue === "column") {
+    main.classList.remove("grid");
+    main.classList.toggle("column");
+  } else if (selectedValue === "grid") {
+    main.classList.remove("column");
+    main.classList.toggle("grid");
+  }
+};
+
+const changeViewVar = document.querySelector("#view");
+if (changeViewVar) {
+  changeViewVar.addEventListener("change", changeView);
+}
 
 /*Display temperature */
 
@@ -209,41 +227,6 @@ function enableLightMode() {
     modeButton.textContent = "🌑";
 }
 
-/*ADVERTISEMENT*/
 
-const memberJson = "https://edwell22.github.io/wdd230-3/chamber/data/members.json";
-async function getSilverMembers(url) {
-  const data = await fetch(url);
-  const jsonData = await data.json();
-  const silverCompanies = jsonData.companies.filter(
-    (company) => company.membershipLevel === "Silver"
-  );
 
-  console.log(silverCompanies);
 
-  showSpotlights(silverCompanies);
-}
-
-getSilverMembers(memberJson);
-
-const spotlights = document.querySelector("#spotlights");
-
-function showSpotlights(silverCompanies) {
-  silverCompanies.forEach((element) => {
-    console.log(element);
-
-    const h3 = document.createElement("h3");
-    h3.textContent = element.name;
-
-    const img = document.createElement("img");
-    img.setAttribute("src", `./${element.image}`);
-    img.setAttribute("alt", element.name);
-
-    const p = document.createElement("p");
-    p.textContent = element.advertisement;
-
-    spotlights.appendChild(h3);
-    spotlights.appendChild(img);
-    spotlights.appendChild(p);
-  });
-}
