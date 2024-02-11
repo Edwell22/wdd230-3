@@ -15,7 +15,7 @@
             "websiteURL":"https://www.cimas.co.zw/",
             "image": "images/cimas.webp",
             "membershipLevel": "Gold",
-            "advertisement":"Discover excellence in healthcare services at Cimas in Zimbabwe, providing comprehensive and reliable medical solutions tailored to meet your needs"
+            "advertisement":""
         },
         {
             "name": "Food Lovers",
@@ -24,7 +24,7 @@
             "websiteURL":"https://www.foodloverszim.com./",
             "image": "images/food.webp",
             "membershipLevel": "NP",
-            "advertisement":" Experience a delightful and satisfying shopping experience at Food Lovers Super Market in Zimbabwe, where quality, variety, and exceptional service converge." 
+            "advertisement":"" 
         },
         {
             "name": "Nash Paint",
@@ -33,7 +33,7 @@
             "websiteURL":"https://www.nashpaint.com/",
             "image": "images/nash.webp",
             "membershipLevel": "Silver",
-            "advertisement": " Immerse yourself in a world of vibrant possibilities at Nash Paint, where you can unleash style and vibrancy, transforming your spaces with their diverse array of colors and stylish finishes, creating unforgettable memories along the way."
+            "advertisement": ""
         },
         {
             "name": "Chicken Inn",
@@ -42,7 +42,7 @@
             "websiteURL":"https://www.simbisabrands.com/",
             "image": "images/chicken.webp",
             "membershipLevel": "Silver",
-            "advertisement": " Satisfy all your cravings at Chicken Inn, where mouthwatering snacks, daily essentials, and a delectable range of chicken-based meals await, promising a delightful culinary experience that never disappointS"
+            "advertisement": ""
         },
         {
             "name": "enbee",

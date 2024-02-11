@@ -605,12 +605,24 @@ textarea {
     gap: 20px; /* Set gap between elements */
 }
 
+/* Individual card container styles */
+#card-container .container {
 
-/* Member link styles within main directory container */
-#main-directory .container .memberLink {
-    color: #fff; /* Set link color */
+    text-align: center; /* Center-align text */
+    padding: 1rem; /* Add padding */
     font-family: 'Noticia Text', serif; /* Set font family */
+    color: #fff; /* Set text color */
+    margin-top: 1rem; /* Add top margin */
 }
+
+/* Image styles within main directory container */
+#main-directory .container img {
+    width: 100%; /* Set image width */
+    display: block; /* Make image a block element */
+    margin-top: 2rem; /* Add top margin */
+    margin-bottom: 1rem; /* Add bottom margin */
+}
+
 
 /* Label styles */
 label {
