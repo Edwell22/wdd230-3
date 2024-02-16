@@ -1,0 +1,33 @@
+{
+    "companies": [
+        
+        {
+            "name": "Food Lovers",
+            "address": "Sam Levy's Villiage Borrowdale, Harare ",
+            "phoneNumber": "(01) 5123333",
+            "websiteURL":"https://www.foodloverszim.com./",
+            "image": "images/food.webp",
+            "membershipLevel": "NP",
+            "advertisement":"Experience the ultimate food shopping destination at Food Lovers Super Market in Zimbabwe, where quality, variety, and exceptional service come together. Discover an extensive selection of fresh produce, pantry staples, gourmet treats, and specialty items, all meticulously sourced  to meet the highest standards. Whether you're a passionate home cook or simply seeking everyday essentials, Food Lovers Super Market is your go-to place for a delightful and satisfying shoppingexperience." 
+        },
+        {
+            "name": "Nash Paint",
+            "address": "41 Kelvin Rd North,Graniteside,Harare ",
+            "phoneNumber": "(024) 2779300",
+            "websiteURL":"https://www.nashpaint.com/",
+            "image": "images/nash.webp",
+            "membershipLevel": "Silver",
+            "advertisement": "Step into a world of endless possibilities at Nash Paint, where you can Color Your World with Nash Paint, unleashing vibrancy and style!Explore our diverse array of stores and exciting experiences, making unforgettable memories while transforming your spaces with the vibrant hues and stylish finishes offered by Nash Paint."
+        },
+        {
+            "name": "Chicken Inn",
+            "address": " 38 Simon Mazorodze Rd, Harare",
+            "phoneNumber": "+263 (0)242 799 609",
+            "websiteURL":"https://www.simbisabrands.com/",
+            "image": "images/chicken.webp",
+            "membershipLevel": "Silver",
+            "advertisement": " Satisfy your cravings at Chicken Inn! From delicious meal of the daily essentials, we've got it all. Indulge in our delicious range of chicken-based meals and experience the convenience of a neighborhood restaurant that never fails to delight your taste buds."
+        }
+    ]
+
+}

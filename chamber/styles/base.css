@@ -584,7 +584,8 @@ textarea {
     max-width: 100%; /* Ensure cards don't exceed maximum width */
     display: flex;
     flex-direction: column; /* Arrange cards vertically */
-    align-items: center; /* Center-align items horizontally */
+    align-items: center; 
+    gap: 10px;/* Center-align items horizontally */
 }
 
 /* Card container styles for grid layout */
@@ -613,14 +614,13 @@ textarea {
     font-family: 'Noticia Text', serif; /* Set font family */
     color: #fff; /* Set text color */
     margin-top: 1rem; /* Add top margin */
+
 }
 
 /* Image styles within main directory container */
-#main-directory .container img {
+ .container img {
     width: 100%; /* Set image width */
-    display: block; /* Make image a block element */
-    margin-top: 2rem; /* Add top margin */
-    margin-bottom: 1rem; /* Add bottom margin */
+    
 }
 
 
