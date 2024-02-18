@@ -81,7 +81,7 @@ main {
 
 section,aside {
     background-color: rgba(155, 162, 228, 0.7);
-    color: hsl(206, 94%, 14%);
+    color: #010b27;
     font-family: 'Noticia Text', serif;
     padding: 1rem;
     border: 5px ridge hsl(234, 88%, 13%);
@@ -233,6 +233,31 @@ i {
     border-radius: 30%;
 }
 
+#recent-news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .section-header {
+    margin-bottom: 20px;
+  }
+  
+  .new, .event {
+    width: 70%; /* Adjust width as needed */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .new h3, .event a {
+    margin-bottom: 10px;
+  }
+  
+  .new p, .event p {
+    margin-bottom: 10px;
+  }
+  
 
 @keyframes fade {
     0%{
@@ -244,7 +269,33 @@ i {
     }
 
 }
+/*Advertisement*/
 
+  .advertisement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+  }
+  
+  .advertisement img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .advertisement p {
+    margin: 5px 0;
+  }
+  
+  .advertisement a {
+    text-decoration: none;
+    color: blue;
+  }
+  
 
   /* Discover Page*/
   
@@ -462,6 +513,7 @@ i {
 form {
     font-family: 'Noticia Text', serif;
 }
+
 form fieldset {
     margin: 2rem 0;
     border: 5px ridge hsl(234, 88%, 13%);
@@ -494,10 +546,17 @@ form label.top {
     border-radius: 4px;
     padding: .5rem 0;
     width: 100%;
-   
-    
+       
 }
 
+textarea {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+
+  input{
+    font-size: 18px;
+  }
+  
 
 form label.sbs {
     display: block;
@@ -519,6 +578,7 @@ form input.joinBtn {
     font-size: 1.2rem;
  
 }
+
 .button {
     display: flex;
     justify-content: center;
@@ -536,6 +596,20 @@ textarea {
     display: block;   
 }
 
+#boot {
+    text-align: center;
+    margin: 20px;
+  }
+  
+
+fieldset select option {
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  fieldset label strong {
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+  
 
 /*Thank you page*/
 
