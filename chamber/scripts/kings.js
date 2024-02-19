@@ -235,3 +235,31 @@ function updateLastVisit() {
 
 // Call the function to update last visit information
 updateLastVisit();
+
+//Banner
+
+// Function to toggle the visibility of the banner
+function toggleBanner() {
+  var banner = document.getElementById("banner");
+  if (banner.style.display === "none" || banner.style.display === "") {
+    banner.style.display = "block"; // Display the banner
+  } else {
+    banner.style.display = "none"; // Hide the banner
+  }
+}
+
+// Function to close the banner
+function closeBanner() {
+  document.getElementById("banner").style.display = "none";
+}
+
+// Function to check if today is Monday, Tuesday, or Wednesday
+function isWeekday() {
+  var today = new Date().getDay();
+  return today >= 1 && today <= 3; // Monday is 1, Tuesday is 2, Wednesday is 3
+}
+
+// Check if today is a weekday and if so, display the banner
+if (isWeekday()) {
+  document.getElementById("banner").style.display = "block";
+}

@@ -20,7 +20,12 @@
     <title>Home Page Borrowdale Chamber Of Commerce</title>
 </head>
 <body>
-    
+    <div id="banner" class="banner">
+        <span class="close-btn" onclick="closeBanner()">❌</span>
+        <p>🤝🏼 Members and Friends Come & Join Us For Chamber of Commerce Meet and Greet Wednesday at 7:00 p.m</p>
+      </div>
+      
+      
     <header>
         
         <img src="images/logoy.webp" alt="logo">
@@ -82,54 +87,64 @@
             </div>
             
         </section>
-
-        <section id="recent-news">
-            <div class="section-header"><h2>News</h2>
-            </div>
-
-            <div class="new">
-                <h3>Borrowdale Chamber of Commerce Welcomes New Members</h3>
-                <p> The Borrowdale Chamber of Commerce has gained widespread acclaim as
-                    an exemplary model for district-level excellence,
-                    establishing unprecedented standards for fostering community-led economic progress.
-                   This well-deserved recognition is a testament to the chamber's unwavering dedication 
-                   to promoting local businesses, facilitating networking opportunities,
-                  and fostering a thriving entrepreneurial ecosystem. 
-                  Given the rapid pace of growth witnessed in this region,
-                 it is evident that Borrowdale is poised to achieve remarkable milestones in 
-                  the near future.</p>
-            </div>
-            <div class="new">
-                <h3>Partners with Local Schools for Workforce Development</h3>
-                <p>The Borrowdale Chamber of Commerce is thrilled to announce a new partnership with local schools to 
-                    enhance workforce development in our city. We're committed to supporting educational  and local small
-                     business initiatives that prepare our youth for successful careers.</p>
-            </div>
-            <div class="new">
-                <h3>Great news for local entrepreneurs!</h3>
-                <p> The Borrowdale Chamber of Commerce is proud to introduce a new grant program aimed at boosting small businesses in our city. If you're looking for financial assistance to kickstart or expand your venture.</p>
-            </div>
-        
-            <div class="section-header"><h2>Events</h2>
-            </div>
-            <div class="event">
-                <a href="#">Networking </a>
-                <p>Join us for an evening of networking and collaboration! Connect with fellow members and expand your business horizons.</p>
-            </div>
-            <div class="event">
-                <a href="#">Comments</a>
-                <p> Enrolling in the chamber of commerce has yielded remarkable business expansion over the past seven months,
-                    solidifying it as a profoundly wise choice I made.</p>
-            </div>
-            
-        </section>
-
-        <aside>
-            <div class="section-header"><h2>Spotlights</h2>
-            </div>
-            <div class="spotlights" id="spotlights"></div>
-        </aside>
+      
     </main>
+
+  <div class="grid3">
+    <section id="recent-news">
+        <div class="section-header"><h2>News</h2>
+        </div>
+
+        <div class="new">
+            <h3>Borrowdale Chamber of Commerce Welcomes New Members</h3>
+            <p> The Borrowdale Chamber of Commerce has gained widespread acclaim as
+                an exemplary model for district-level excellence,
+                establishing unprecedented standards for fostering community-led economic progress.
+               This well-deserved recognition is a testament to the chamber's unwavering dedication 
+               to promoting local businesses, facilitating networking opportunities,
+              and fostering a thriving entrepreneurial ecosystem. 
+              Given the rapid pace of growth witnessed in this region,
+             it is evident that Borrowdale is poised to achieve remarkable milestones in 
+              the near future.</p>
+        </div>
+        <div class="new">
+            <h3>Partners with Local Schools for Workforce Development</h3>
+            <p>The Borrowdale Chamber of Commerce is thrilled to announce a new partnership with local schools to 
+                enhance workforce development in our city. We're committed to supporting educational  and local small
+                 business initiatives that prepare our youth for successful careers.</p>
+        </div>
+        <div class="new">
+            <h3>Great news for local entrepreneurs!</h3>
+            <p> The Borrowdale Chamber of Commerce is proud to introduce a new grant program aimed at boosting small businesses in our city. If you're looking for financial assistance to kickstart or expand your venture.</p>
+        </div>
+    
+        <div class="section-header"><h2>Events</h2>
+        </div>
+        <div class="event">
+            <a href="#">Networking </a>
+            <p>Join us for an evening of networking and collaboration! Connect with fellow members and expand your business horizons.</p>
+        </div>
+        <div class="event">
+            <a href="#">Comments</a>
+            <p> Enrolling in the chamber of commerce has yielded remarkable business expansion over the past seven months,
+                solidifying it as a profoundly wise choice I made.</p>
+        </div>
+        
+    </section>
+<br>
+    <aside>
+        <div class="section-header"><h2>Spotlights</h2>
+        </div>
+        <div class="spotlights" id="spotlights"></div>
+    </aside>
+
+</div>
+
+<br>
+
+
+
+
     <footer id="kings" style="display:flex; justify-content: space-between;  height: 150px;">
         <div><img src="images/logom.webp" alt="logo"></div>
         <p>&copy;<span id="year"></span>&bull; Borrowdale Chamber | <strong>Edwell Kakunguwo</strong> | WDD230 Project <br>
@@ -141,5 +156,6 @@
     </footer>
     <script src="./scripts/kings.js"></script>
     <script src="./scripts/spotlight.js"></script>
+
 </body>
 </html>

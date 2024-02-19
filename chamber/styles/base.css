@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 header img {
     width: 30%;
@@ -182,10 +183,7 @@ h1 {
     content: "°F"
 }
 
-#recent-news {
-    width: 98%;
-      
-  }  
+
 
 #events {
     grid-column: 2/3;
@@ -599,8 +597,12 @@ textarea {
 #boot {
     text-align: center;
     margin: 20px;
+    color:#032147;
   }
   
+  option{
+    font-size: 20px;
+  }
 
 fieldset select option {
     font-size: 16px; /* Adjust the font size as needed */
@@ -709,9 +711,32 @@ label {
 
 
 
+.grid3{
+    margin: 0 20px;
+   
+   
+  }
 
+/*banner*/
 
-
+#banner {
+    text-align: center;
+    background-color: rgb(170, 108, 26);
+    color: whitesmoke;
+    font-family: 'Condensed', sans-serif;
+    display: block;/* Initially hide the banner */
+  }
+  
+  .close-btn {
+    cursor: pointer;
+  }
+  
+  .banner p {
+    margin: 0; /* Remove default margin */
+  }
+  
+  
+  
 
 
 
